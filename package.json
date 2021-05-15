@@ -20,6 +20,7 @@
   "homepage": "https://github.com/Henriquedevb/cadastramento-pacientes#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.12.9"
+    "mongoose": "^5.12.9",
+    "nodemon": "^2.0.7"
   }
 }
