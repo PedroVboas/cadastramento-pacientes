@@ -19,8 +19,12 @@
   },
   "homepage": "https://github.com/Henriquedevb/cadastramento-pacientes#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
     "mongoose": "^5.12.9",
-    "nodemon": "^2.0.7"
+    "mongoose-paginate-v2": "^1.3.17",
+    "nodemon": "^2.0.7",
+    "yup": "^0.32.9"
   }
 }
