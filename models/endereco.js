@@ -5,7 +5,6 @@ const Endereco = new mongoose.Schema({
     cidade: {
         type: String,
         required: [true,
-            
             "Necessario informar cidade do paciente."
         ]
     },
