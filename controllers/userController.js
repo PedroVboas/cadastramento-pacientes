@@ -1,7 +1,7 @@
-import * as Yup from 'yup';
-import bcrypt from 'bcryptjs';
-import User from '../models/user.js';
-import paginate from 'mongoose-paginate-v2';
+const  Yup = require('yup');
+const bcrypt = require('bcryptjs');
+const User = require('../models/user.js');
+const paginate = require('mongoose-paginate-v2');
 
 class UserController {
 
@@ -238,4 +238,4 @@ class UserController {
     }
 }
 
-export default new UserController();
+module.exports = new UserController();

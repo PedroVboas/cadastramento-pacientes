@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 
 const Endereco = new mongoose.Schema({
 
@@ -40,4 +40,4 @@ const Endereco = new mongoose.Schema({
     timestamps: true
 });
 
-export default mongoose.model('endereco', Endereco);
+module.exports = mongoose.model('endereco', Endereco);

@@ -1,4 +1,4 @@
-import Pacientes from "../models/paciente.js";
+const Pacientes = require("../models/paciente.js");
 
 class pacienteController {
 
@@ -63,4 +63,4 @@ class pacienteController {
 
 }
 
-export default new pacienteController();
+module.exports =  new pacienteController();
