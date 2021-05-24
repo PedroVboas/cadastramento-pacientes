@@ -1,4 +1,4 @@
-import * as Yup from 'yup';
+import * as Yup from 'yup'; 
 import bcrypt from 'bcryptjs';
 import User from '../models/user.js';
 import paginate from 'mongoose-paginate-v2';
