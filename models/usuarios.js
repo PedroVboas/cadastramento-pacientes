@@ -49,3 +49,5 @@ const AtendenteModel = UserModel.discriminator("Atendendente", new mongooose.Sch
 
 const PacienteModel = UserModel.discriminator("Paciente", new mongooose.Schema({}));
 
+
+
