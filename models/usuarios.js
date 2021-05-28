@@ -38,13 +38,14 @@ const UserSchema = new mongoose.Schema({
 
 const UserModel = mongoose.model("User", UserSchema);
 
-const MedicoModel = UserModel.discriminator("Medico", new new mongooose.Schema({
+const MedicoModel = UserModel.discriminator("Medico", new mongooose.Schema({
 	crm: String,
 	senha: String
 }));
 
-const AtendenteModel = UserModel.discriminator("Atendendente", new new mongooose.Schema({
+const AtendenteModel = UserModel.discriminator("Atendendente", new mongooose.Schema({
 	senha: String
 }));
 
-const PacienteModel = UserModel.discriminator("Paciente", new new mongooose.Schema({}));
+const PacienteModel = UserModel.discriminator("Paciente", new mongooose.Schema({}));
+
