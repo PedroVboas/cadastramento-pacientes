@@ -1,12 +1,12 @@
-import express from "express";
+const express = require("express");
 
 //rotas
 
-import routesPacientes from "./routes/pacienteCadastro.js";
-import users from "./routes/pacienteLogin.js";
+const routesPacientes = require("./routes/pacienteCadastro.js");
+const users = require("./routes/pacienteLogin.js");
 
 //CONEXAO COM BANCO DE DADOS
-import"./Database/db.js";
+require("./Database/db.js");
 
 
 class App {
@@ -28,4 +28,4 @@ class App {
   
 }
 
-export default new App().app;
+module.exports =  new App().app;

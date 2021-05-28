@@ -1,7 +1,7 @@
-import {Router} from "express";
+const {Router} = require("express");
 const app = new Router();
 
-import pacienteController from '../controllers/pacienteController.js';
+const pacienteController = require('../controllers/pacienteController.js');
 
 
 app.get("/pacientes", pacienteController.list);
@@ -10,4 +10,4 @@ app.post("/pacientes",  pacienteController.create);
 app.put("/pacientes/:id", pacienteController.update);
 
 
-export default app;
+module.exports = app;
