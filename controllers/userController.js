@@ -1,14 +1,10 @@
-<<<<<<< HEAD
-import * as Yup from 'yup'; 
-import bcrypt from 'bcryptjs';
-import User from '../models/user.js';
-import paginate from 'mongoose-paginate-v2';
-=======
+//<<<<<<< HEAD
+//=======
 const  Yup = require('yup');
 const bcrypt = require('bcryptjs');
 const User = require('../models/user.js');
 const paginate = require('mongoose-paginate-v2');
->>>>>>> 19e618fe41e7b4708d8cd891f9414a3e3663d2b1
+//>>>>>>> 19e618fe41e7b4708d8cd891f9414a3e3663d2b1
 
 class UserController {
 
