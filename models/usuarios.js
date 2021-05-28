@@ -36,17 +36,25 @@ const UserSchema = new mongoose.Schema({
 
 });
 
+
+//UserController
 const UserModel = mongoose.model("User", UserSchema);
 
+
+//medicoController
 const MedicoModel = UserModel.discriminator("Medico", new mongooose.Schema({
 	crm: String,
 	senha: String
 }));
 
+
+//AtendenteController
 const AtendenteModel = UserModel.discriminator("Atendendente", new mongooose.Schema({
 	senha: String
 }));
 
+
+//PacienteController
 const PacienteModel = UserModel.discriminator("Paciente", new mongooose.Schema({}));
 
 
